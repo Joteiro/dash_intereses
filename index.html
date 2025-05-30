@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Intereses</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Interactivo</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS2M5YTLVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PS2M5YTLVP');
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 2em;
+      max-width: 600px;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #0078D4;
+      color: white;
+      padding: 0.75em 1.5em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #005fa3;
+    }
+
+    .secondary {
+      margin-top: 1.5em;
+      font-size: 0.9em;
+    }
+
+    .secondary a {
+      color: #0078D4;
+      text-decoration: none;
+    }
+
+    .secondary a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    
-<h2>Ver Dashboard de Power BI</h2>
-<p>
-   <a href="https://app.powerbi.com/groups/me/reports/6578d23a-d12e-4cd4-a27a-7e76be0b7db1/d1bcb0b6655d0b3f8014?experience=power-bi" 
-      target="_blank" 
-      onclick="gtag('event', 'click', { 'event_category': 'Dashboard', 'event_label': 'PowerBI link' });">
-      Hacé clic acá para ver el Dashboard
-   </a>
-</p>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PS2M5YTLVP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-PS2M5YTLVP');
-</script>
+  <h1>Bienvenido a mi dashboard interactivo</h1>
+  <p>Explorá los datos de forma dinámica y visual. Hacé clic en el botón para abrir el dashboard en una nueva pestaña.</p>
+
+  <a 
+    class="button" 
+    href="https://app.powerbi.com/groups/me/reports/6578d23a-d12e-4cd4-a27a-7e76be0b7db1/d1bcb0b6655d0b3f8014?experience=power-bi" 
+    target="_blank"
+    onclick="gtag('event', 'click', { 'event_category': 'Dashboard', 'event_label': 'PowerBI link' });">
+    Ver Dashboard
+  </a>
 
 </body>
 </html>
