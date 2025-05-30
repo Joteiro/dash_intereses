@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard Interactivo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -71,11 +72,38 @@
     .secondary a:hover {
       text-decoration: underline;
     }
+    form {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #005ea1;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Bienvenido a mi dashboard interactivo</h1>
+  <h1>Bienvenido a mi dashboard interactivo 📊</h1>
   <p>Explorá los datos de forma dinámica y visual. Hacé clic en el botón para abrir el dashboard en una nueva pestaña.</p>
 
   <a 
@@ -85,6 +113,14 @@
     onclick="gtag('event', 'click', { 'event_category': 'Dashboard', 'event_label': 'PowerBI link' });">
     Ver Dashboard
   </a>
+
+  <form 
+    action="https://formspree.io/f/xrbkzqwd" 
+    method="POST">
+    <p>¿Querés saber cómo lo construí? Dejá tu mail y te cuento en detalle 👇</p>
+    <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
+    <input type="submit" value="Quiero saber más" />
+  </form>
 
 </body>
 </html>
