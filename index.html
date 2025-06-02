@@ -21,116 +21,103 @@
     gtag('config', 'G-PS2M5YTLVP');
   </script>
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      background-image: url('fondo.png');
-      background-size: cover; /* o 'contain' según el efecto deseado */
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed; /* para efecto parallax */
-    }
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f5f7fa;
+    color: #333;
+    text-align: center;
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+  }
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 2em;
-      max-width: 600px;
-    }
+  p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 2em auto;
+  }
 
-    a.button {
-      display: inline-block;
-      background-color: #0078D4;
-      color: white;
-      padding: 0.75em 1.5em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s;
-    }
+  iframe {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+  }
 
-    a.button:hover {
-      background-color: #005fa3;
-    }
+  form {
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    .secondary {
-      margin-top: 1.5em;
-      font-size: 0.9em;
-    }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
 
-    .secondary a {
-      color: #0078D4;
-      text-decoration: none;
-    }
+  input[type="submit"] {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-    .secondary a:hover {
-      text-decoration: underline;
+  input[type="submit"]:hover {
+    background-color: #005ea1;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      height: 60vh;
     }
-    form {
-      margin-top: 40px;
-      background: #fff;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-    input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      font-size: 1em;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    input[type="submit"] {
-      background-color: #0078d4;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #005ea1;
-    }
-  </style>
+  }
+</style>
+
 </head>
 <body>
 
-  <h1>Bienvenido a mi dashboard interactivo 📊</h1>
-  
-  <p>Explorá los datos de forma dinámica y visual en Power BI. Hacé clic en el botón para abrir el dashboard en una nueva pestaña.</p>
+<h1>Bienvenido a mi dashboard interactivo</h1>
 
-  <!-- <a 
-    class="button" 
-    href="https://app.powerbi.com/groups/me/reports/6578d23a-d12e-4cd4-a27a-7e76be0b7db1/d1bcb0b6655d0b3f8014?experience=power-bi" 
-    target="_blank"
-    onclick="gtag('event', 'click', { 'event_category': 'Dashboard', 'event_label': 'PowerBI link' });">
-    Ver Dashboard
-  </a> -->
+<p>Explorá los datos de forma dinámica y visual en Power BI. A continuación podés ver el dashboard embebido:</p>
 
-<iframe title="Dashboard Intereses" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNjQwNmFhODAtNWRjNC00N2JkLWE3ZDItZGRmZWQ3ZjY2NGM4IiwidCI6ImIxNTViZjc0LTdlOTMtNGE4Ni1hOGQxLWYxY2M5ODU1Y2Y3NSIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-  <form 
-    action="https://formspree.io/f/xrbkzqwd" 
-    method="POST">
-    <p>¿Querés saber cómo lo construí? Dejá tu mail y te cuento en detalle 👇</p>
-    <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
-    <input type="submit" value="Quiero saber más" />
-  </form>
+<iframe 
+  title="Dashboard Intereses" 
+  src="https://app.powerbi.com/view?r=eyJrIjoiNjQwNmFhODAtNWRjNC00N2JkLWE3ZDItZGRmZWQ3ZjY2NGM4IiwidCI6ImIxNTViZjc0LTdlOTMtNGE4Ni1hOGQxLWYxY2M5ODU1Y2Y3NSIsImMiOjJ9" 
+  allowFullScreen="true">
+</iframe>
+
+<form 
+  action="https://formspree.io/f/xrbkzqwd" 
+  method="POST">
+  <p>¿Querés saber cómo lo construí? Dejá tu mail y te cuento en detalle 👇</p>
+  <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
+  <input type="submit" value="Quiero saber más" />
+</form>
 
 </body>
 </html>
