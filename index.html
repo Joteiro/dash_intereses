@@ -26,10 +26,9 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 40px 20px;
-    background-color: #f5f7fa;
-    color: #333;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    background-image: url('fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,12 +38,14 @@
   h1 {
     font-size: 2.5em;
     margin-bottom: 0.3em;
+    color: #fff;
   }
 
   p {
     font-size: 1.2em;
     max-width: 700px;
     margin: 0 auto 2em auto;
+    color: #ccc;
   }
 
   iframe {
@@ -53,43 +54,51 @@
     height: 80vh;
     border: none;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
     margin-bottom: 40px;
   }
 
-  form {
-    margin: 0 auto;
-    background: #fff;
-    padding: 25px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    max-width: 400px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+form {
+  margin: 0 auto;
+  background: #fff; /* fondo blanco */
+  color: #000;       /* texto negro */
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
 
-  input[type="email"] {
-    width: 100%;
-    padding: 12px;
-    font-size: 1em;
-    margin-bottom: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
+form p {
+  color: #000; /* aseguramos que el texto del párrafo sea negro */
+}
 
-  input[type="submit"] {
-    background-color: #0078d4;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+input[type="email"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 1em;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
 
-  input[type="submit"]:hover {
-    background-color: #005ea1;
-  }
+input[type="submit"] {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #005ea1;
+}
+
 
   @media (max-width: 768px) {
     iframe {
